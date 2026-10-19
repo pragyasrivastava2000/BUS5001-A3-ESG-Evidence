@@ -109,7 +109,7 @@ Some raw responses included Markdown code fences around JSON, requiring addition
 | Improved four-field classification | 3/3 correct | All three incidents matched their expected ESG categories |
 | Extended eight-field classification | 2/3 correct | ESG002 was incorrectly classified as Environmental |
 | Structured output validation | 3/3 successful | Tested outputs passed validation after the applicable processing |
-| Classification consistency | 2/3 | Classification behaviour was not fully consistent |
+| Category–team consistency | 2/3 | Two of the three eight-field outputs had an appropriate match between the predicted ESG category and recommended team. ESG002 was classified as Environmental but assigned to HR, creating a category–team mismatch. |
 | Export validation | Passed | Generated results were successfully exported into JSON and CSV formats |
 
 **Important:** These results describe performance on the three selected synthetic incidents only. They should not be interpreted as general model accuracy.
