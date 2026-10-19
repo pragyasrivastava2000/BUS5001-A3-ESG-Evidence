@@ -1,0 +1,5 @@
+Method,Correct,Total,Accuracy (%)
+Original Qwen,2,3,66.67
+Improved Qwen,3,3,100.0
+Rule-Based,3,3,100.0
+BART Zero-Shot,2,3,66.67

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "ESG001",
+        "message": "A factory employee reports that untreated wastewater is being discharged into a nearby river.",
+        "expected_category": "Environmental",
+        "model_response": "```json\n{\n  \"category\": \"Environmental\",\n  \"priority\": \"High\",\n  \"escalate_to_human\": true,\n  \"reason\": \"The discharge of untreated wastewater into a nearby river poses severe environmental harm and immediate safety risks.\"\n}\n```"
+    },
+    {
+        "id": "ESG002",
+        "message": "Several warehouse employees report unsafe working conditions, excessive overtime and a lack of appropriate protective equipment.",
+        "expected_category": "Social",
+        "model_response": "```json\n{\n  \"category\": \"Social\",\n  \"priority\": \"High\",\n  \"escalate_to_human\": true,\n  \"reason\": \"The reported unsafe working conditions, excessive overtime, and lack of appropriate protective equipment indicate severe material concerns that require immediate attention.\"\n}\n```"
+    },
+    {
+        "id": "ESG003",
+        "message": "An employee reports that a senior manager approved payments to a supplier owned by a family member without declaring the conflict of interest.",
+        "expected_category": "Governance",
+        "model_response": "```json\n{\n  \"category\": \"Governance\",\n  \"priority\": \"High\",\n  \"escalate_to_human\": true,\n  \"reason\": \"The report indicates potential corruption and undisclosed related-party transactions, which could lead to significant ethical violations.\"\n}\n```"
+    }
+]

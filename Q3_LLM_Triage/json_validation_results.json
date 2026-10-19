@@ -1,0 +1,23 @@
+[
+    {
+        "id": "ESG001",
+        "raw_json_valid": false,
+        "schema_valid": true,
+        "category_correct": true,
+        "status": "PASS"
+    },
+    {
+        "id": "ESG002",
+        "raw_json_valid": false,
+        "schema_valid": true,
+        "category_correct": true,
+        "status": "PASS"
+    },
+    {
+        "id": "ESG003",
+        "raw_json_valid": false,
+        "schema_valid": true,
+        "category_correct": true,
+        "status": "PASS"
+    }
+]

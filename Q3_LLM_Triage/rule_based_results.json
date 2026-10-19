@@ -1,0 +1,35 @@
+[
+    {
+        "id": "ESG001",
+        "expected_category": "Environmental",
+        "predicted_category": "Environmental",
+        "correct": true,
+        "scores": {
+            "Environmental": 3,
+            "Social": 0,
+            "Governance": 0
+        }
+    },
+    {
+        "id": "ESG002",
+        "expected_category": "Social",
+        "predicted_category": "Social",
+        "correct": true,
+        "scores": {
+            "Environmental": 0,
+            "Social": 4,
+            "Governance": 0
+        }
+    },
+    {
+        "id": "ESG003",
+        "expected_category": "Governance",
+        "predicted_category": "Governance",
+        "correct": true,
+        "scores": {
+            "Environmental": 0,
+            "Social": 0,
+            "Governance": 3
+        }
+    }
+]

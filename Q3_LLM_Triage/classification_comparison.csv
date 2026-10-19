@@ -1,0 +1,4 @@
+Incident,Expected,Original Qwen,Improved Qwen,Rule-Based,BART Zero-Shot
+ESG001,Environmental,Environmental,Environmental,Environmental,Environmental
+ESG002,Social,Social,Social,Social,Governance
+ESG003,Governance,Social,Governance,Governance,Governance

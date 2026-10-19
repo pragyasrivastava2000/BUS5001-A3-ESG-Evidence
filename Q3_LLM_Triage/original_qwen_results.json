@@ -1,0 +1,17 @@
+[
+    {
+        "id": "ESG001",
+        "expected_category": "Environmental",
+        "model_response": "**ESG Category:** Environmental\n\n**Priority Level:** High\n\n**Explanation:**\nThe issue of untreated wastewater discharging into a nearby river falls under the Environmental category because it directly impacts the environmental health and safety of the surrounding ecosystem. The discharge can lead to water pollution, harm aquatic life, and potentially affect human health through contaminated drinking water sources. Given the severity of this problem, which involves immediate environmental damage without any indication of mitigation efforts, the priority level is set as High."
+    },
+    {
+        "id": "ESG002",
+        "expected_category": "Social",
+        "model_response": "**ESG Category:** Social\n\n**Priority Level:** High\n\n**Explanation:**\nThe message highlights issues related to employee safety, work-life balance, and protection against hazards at the workplace. These concerns fall under the Social pillar as they directly impact the well-being and rights of workers. The severity of these issues suggests that immediate attention is required to address them, making it a high-priority concern."
+    },
+    {
+        "id": "ESG003",
+        "expected_category": "Governance",
+        "model_response": "**ESG Category:** Social\n\n**Priority Level:** High\n\n**Explanation:**\nThis incident involves a potential violation of ethical standards and conflicts of interest, which fall under the Social category in ESG considerations. The high priority is due to the serious nature of the issue, where there's a clear breach of trust between employees and management, potentially affecting company reputation and integrity."
+    }
+]

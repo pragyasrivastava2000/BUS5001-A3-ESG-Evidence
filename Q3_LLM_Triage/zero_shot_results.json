@@ -1,0 +1,38 @@
+[
+    {
+        "id": "ESG001",
+        "expected_category": "Environmental",
+        "predicted_category": "Environmental",
+        "confidence": 0.9649760127067566,
+        "correct": true,
+        "all_scores": {
+            "Environmental": 0.9649760127067566,
+            "Governance": 0.019799238070845604,
+            "Social": 0.01522471196949482
+        }
+    },
+    {
+        "id": "ESG002",
+        "expected_category": "Social",
+        "predicted_category": "Governance",
+        "confidence": 0.4694333076477051,
+        "correct": false,
+        "all_scores": {
+            "Governance": 0.4694333076477051,
+            "Social": 0.40861162543296814,
+            "Environmental": 0.12195504456758499
+        }
+    },
+    {
+        "id": "ESG003",
+        "expected_category": "Governance",
+        "predicted_category": "Governance",
+        "confidence": 0.7714822888374329,
+        "correct": true,
+        "all_scores": {
+            "Governance": 0.7714822888374329,
+            "Social": 0.20502281188964844,
+            "Environmental": 0.023494871333241463
+        }
+    }
+]
