@@ -1,156 +1,93 @@
 
-# BUS5001 — Assessment 3: Cloud Platforms and Analytics
+# BUS5001 Assessment 3 — ESG Automation and Responsible AI
 
-**Project:** ESG Automation, LLM-Based Incident Triage and Cloud-Based Technology Evaluation
+## Project Overview
 
-**Assessment:** BUS5001 — Assessment 3  
-**Evidence Repository:** Practical Experiments, Implementation Results and Supporting Documentation
+This repository contains practical implementation evidence, experimental outputs, screenshots, and supporting documentation for BUS5001 Assessment 3.
 
----
+The assessment explores cloud-based sustainability automation, conversational AI, and responsible use of large language models.
 
-## 1. Repository Overview
+The repository contains evidence for three practical components:
 
-This repository contains practical implementation evidence, experimental results and supporting documentation for Questions 3 and 4 of BUS5001 Assessment 3.
+- **Q1:** EcoAssist sustainability incident reporting chatbot
+- **Q3:** LLM-based ESG operational message triage
+- **Q4:** NotebookLM for academic ESG research
 
-The assessment explores how cloud-based technologies and language models can support organisational sustainability operations, ESG incident management and academic research workflows.
+**Q2**, the 2024 Snowflake cloud security incident analysis, is presented in the written assessment report.
 
-The repository is organised into two main sections:
+## Repository Navigation
 
-- **Q3 — LLM-Based ESG Message Triage**
-- **Q4 — Google NotebookLM Evaluation**
+### Q1 — EcoAssist Chatbot
 
-Each section contains its own README with the experimental methodology, findings, critical evaluation and supporting evidence.
+EcoAssist is a sustainability incident reporting chatbot developed using Google Dialogflow CX.
 
-## 2. Repository Structure
+It supports five incident categories and demonstrates intent recognition, custom entities, parameter collection, conditional routing, critical escalation, report review, correction, and human handoff.
 
-```text
-BUS5001-A3-ESG-Evidence/
-│
-├── README.md
-│
-├── Q3_LLM_Triage/
-│   ├── README.md
-│   ├── BUS5001_Q3_ESG_LLM_Triage.ipynb
-│   ├── accuracy_summary.csv
-│   ├── classification_comparison.csv
-│   ├── original_qwen_results.json
-│   ├── improved_qwen_results.json
-│   ├── json_validation_results.json
-│   ├── rule_based_results.json
-│   ├── zero_shot_results.json
-│   └── HuggingFace_Screenshots/
-│
-└── Q4_NotebookLM/
-    ├── README.md
-    └── Q4_NotebookLM_Evaluation_Log.md
-```
+- [Q1 Implementation Screenshots](EcoAssist_Q1_Evidence/01_Implementation_Screenshots)
+- [Q1 Chatbot Test Screenshots](EcoAssist_Q1_Evidence/02_Chatbot_Test_Screenshots)
+- [Q1 Project Documentation](EcoAssist_Q1_Evidence/README.md)
 
-Additional screenshots and supporting evidence can be added to the relevant folders.
+Fifteen simulator scenarios (T01–T15) were executed, including critical incident escalation and error recovery.
 
-## 3. Q3 — LLM-Based ESG Message Triage
+### Q3 — LLM-Based ESG Message Triage
 
-**[View Q3 Experiments and Evidence](Q3_LLM_Triage/README.md)**
+A Google Colab prototype using Qwen/Qwen2.5-1.5B-Instruct to classify three synthetic ESG operational messages.
 
-### Objective
+The experiments compare basic, improved four-field, and eight-field prompts with rule-based and zero-shot classification baselines.
 
-Evaluate whether an open-source Large Language Model can classify ESG operational incidents and generate structured outputs to support organisational triage and escalation workflows.
+#### Key Results
 
-### Technologies
-
-- Python
-- Google Colab
-- Hugging Face
-- Qwen/Qwen2.5-1.5B-Instruct
-- JSON and CSV
-
-### Experimental Scope
-
-Three synthetic ESG incidents were tested:
-
-| Incident | ESG Category |
+| Experiment | Category accuracy |
 |---|---|
-| Wastewater discharge | Environmental |
-| Worker safety and excessive overtime | Social |
-| Undisclosed supplier family relationship | Governance |
+| Basic Qwen prompt | 2/3 |
+| Improved four-field Qwen prompt | 3/3 |
+| Eight-field Qwen prompt | 2/3 |
+| Keyword rule-based baseline | 3/3 |
+| BART zero-shot baseline | 2/3 |
 
-### Key Results
+Additional findings:
 
-| Evaluation | Result |
+- **Category–team consistency:** 2/3 for the eight-field outputs.
+- **Raw JSON validity:** 0/3 due to Markdown code fences.
+- **JSON schema validity after removing fences:** 3/3.
+- The experiments use only three synthetic messages, so the results are illustrative rather than representative of production accuracy.
+
+See the Q3 experiment files and README for supporting evidence.
+
+### Q4 — NotebookLM ESG Research Assistant
+
+NotebookLM was evaluated as a source-grounded research assistant using IFRS S1 and IFRS S2 overview pages from the IFRS Foundation.
+
+Seven experiments were completed:
+
+| Experiment | Feature evaluated |
 |---|---|
-| Improved four-field classification | 3/3 correct |
-| Extended eight-field classification | 2/3 correct |
-| Structured output validation | 3/3 successful |
-| Classification consistency | 2/3 |
+| E01 | Source import |
+| E02 | Source-grounded question answering |
+| E03 | Academic summarisation |
+| E04 | Cross-source comparison |
+| E05 | Flashcards |
+| E06 | Quiz generation |
+| E07 | Mind mapping |
 
-The experiments demonstrated the potential of structured LLM classification while highlighting limitations involving accuracy, consistency and output formatting.
+The evaluation considers accuracy, usefulness, citation verification, and limitations of source-grounded AI.
 
-Further details are documented in the Q3 folder.
+- [Q4 NotebookLM Evidence](Q4_NotebookLM)
 
-## 4. Q4 — Google NotebookLM Evaluation
+## Evidence and Reproducibility
 
-**[View Q4 Experiments and Evidence](Q4_NotebookLM/README.md)**
+The repository provides screenshots, experimental outputs, and documentation supporting the assessment findings.
 
-### Objective
+Q1 demonstrates a working Dialogflow CX conversational prototype, but does not implement live ticket creation or staff notifications.
 
-Evaluate the suitability of Google NotebookLM as a cloud-based academic research and learning assistant.
+Q3 uses synthetic messages and a small experimental sample. Its results should not be interpreted as production-level performance.
 
-### Academic Scenario
+Q4 uses IFRS Foundation overview pages rather than the complete technical standards, so technical conclusions require verification against the original standards.
 
-A university student preparing an evidence-based briefing on IFRS S1 and IFRS S2 sustainability disclosure standards.
+## Assessment Information
 
-### Research Sources
+**Unit:** BUS5001  
+**Assessment:** Assessment 3  
+**Topic:** Cloud Platforms, ESG Automation and Responsible AI
 
-- IFRS Foundation — IFRS S1 overview
-- IFRS Foundation — IFRS S2 overview
-
-### Experiments
-
-| No. | Feature Evaluated |
-|---|---|
-| 1 | Source Import |
-| 2 | Source-Grounded Question Answering |
-| 3 | Academic Summarisation |
-| 4 | Cross-Source Comparison |
-| 5 | Flashcard Generation |
-| 6 | Quiz Generation |
-| 7 | Mind Map Generation |
-
-### Key Findings
-
-NotebookLM demonstrated useful capabilities for organising research materials, explaining concepts, preparing summaries and supporting independent revision.
-
-The quiz experiment generated 10 questions, with five selected answers found consistent with the relevant IFRS concepts.
-
-The mind map experiment successfully organised IFRS S1, IFRS S2, the four disclosure areas and the relationship between the standards.
-
-Limitations included source dependence, simplified technical explanations and inconsistent visibility of citations in copied outputs.
-
-Further details are documented in the Q4 folder.
-
-## 5. Evidence and Reproducibility
-
-The repository provides supporting materials for reviewing the experimental processes and findings.
-
-Evidence includes:
-
-- Implementation notebooks
-- Test scenarios
-- Classification results
-- JSON and CSV outputs
-- Experimental observations
-- Supporting screenshots
-- Critical evaluations
-
-Results should be interpreted within the scope of the tests conducted rather than as general performance guarantees.
-
-## 6. Overall Conclusion
-
-The Q3 and Q4 experiments demonstrate different applications of cloud-enabled language technologies.
-
-Q3 explores structured ESG incident classification for organisational operations, while Q4 examines academic research and learning support.
-
-Both investigations highlight the importance of output accuracy, source quality, verification, responsible deployment and human oversight.
-
----
-
-**BUS5001 — Assessment 3 | Supporting Experimental Evidence**
+The written report contains the complete analysis, evaluation, references, and recommendations. The Q1 executive demonstration video is provided separately through the report.
